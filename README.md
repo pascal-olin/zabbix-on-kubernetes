@@ -1,5 +1,9 @@
 ## Introduction
-
+<PO>
+This project is forked from  bezarsnba/zabbix-on-kubernetes (https://github.com/bezarsnba/zabbix-on-kubernetes) . all credits to him for the hard work. 
+Running his project I noticed a few issues that I have tried to fix using this fork. 
+</PO>
+I am leaving the rest of this README as written by bezarsnba , except when necessary within <PO> </PO> Tags. 
 - In this repository contains files necessary to provisioning Zabbix in Kubernetes
 
 # Pre requirements
@@ -67,6 +71,12 @@ kubectl get deployment,svc,pods,pvc,ingress  -n monitoring
 
 ```
 
+<PO>
+	Adding an Ingress to the zabbix-frontend POD (zabbix-web-nginx-mysql-0)
+	
+kubectl apply -f zabbix-frontend-ingress.yaml 
+
+</PO>
 ![Alt text](screenshot/kubernetes-zabbix.png?raw=true "Kubernetes-Zabbix")
 
 ## CADVISOR
