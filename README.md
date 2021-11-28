@@ -68,6 +68,15 @@ kubectl apply -f zabbix-agent.yaml
 ```
  kubectl apply -f zabbix-frontend.yaml 
 ```
+*
+(PO)
+Adding an Ingress to the zabbix-frontend POD (zabbix-web-nginx-mysql-0)	
+```
+kubectl apply -f zabbix-frontend-ingress.yaml 
+```
+(/PO)
+*
+
 
 Execute the command to get informations about your enviromennt:
 
@@ -76,14 +85,7 @@ kubectl get deployment,svc,pods,pvc,ingress  -n monitoring
 
 ```
 
-**
-(PO)
 
-Adding an Ingress to the zabbix-frontend POD (zabbix-web-nginx-mysql-0)	
-kubectl apply -f zabbix-frontend-ingress.yaml 
-
-(/PO)
-**
 ![Alt text](screenshot/kubernetes-zabbix.png?raw=true "Kubernetes-Zabbix")
 
 ## CADVISOR
