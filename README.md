@@ -9,11 +9,19 @@ Running his project 2 years later, I noticed a few issues that I have tried to f
 I am leaving the rest of this README as written by @bezarsnba , except when necessary within (PO) (/PO) Tags. 
 **
 (/PO)
-- In this repository contains files necessary to provisioning Zabbix in Kubernetes
+- This repository files contains all files and information to provisioning Zabbix in Kubernetes
+(PO)
+included in repo is the option to build the necessary images from scratch and use a local (microK8s) registry to store them, then use them in our deployment. 
+the build is achieved with Kaniko, to demonstrate we can do everything without Docker. 
+
+(/PO)
+
 
 # Pre requirements
 
-- Kubernetes (Used version: v1.18.0)
+~~- Kubernetes (Used version: v1.18.0)~~ 
+- (PO) microK8s (used Version : installed:v1.22.5(2855) 193MB classic) (/PO)
+- Kaniko (debug image)
 
 # File structure
 
